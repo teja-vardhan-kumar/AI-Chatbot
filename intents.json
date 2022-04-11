@@ -1,0 +1,275 @@
+{"intents": [
+        
+        {"tag": "greeting",
+         "patterns": ["Hi","Hi, there","Hey","Is anyone there?","Hello","What's up","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking","Hello, Nice to meet you", "Good to see you", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye","Catch you later", "Nice chatting to you, bye","see you soon","Talk you later","I'm off", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon.", "I look forward to our next meeting, bye", "Bye, Take care"],
+         "context": [""]
+        },
+        
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me", "I'm very thankful","You saved my day","You are the best","You are a life saver"],
+         "responses": ["Happy to help!", "Any time!","Glad to help","Happy to serve you","That's so kind of you","Your satisfaction is all i need","My pleasure"],
+         "context": [""]
+        },
+        
+        {
+		 "tag":"fever",
+		 "patterns":["fever","i am suffering from fever","i got fever","i am sick from fever","i am having fever","i have fever","i was down with fever"],
+		 "responses":[{
+			"Causes":["Infection due to virus or Bacteria","Heat exhaustion","Inflammations in your body","Antibiotics or certain drugs","Certain Vaccines"],
+			"Symptoms":["Common weakness","Chills and shiver","Loss of hunger","Dehydration", "Muscle pains", "Sweating", "Vomiting", "Sore throat", "Diarrhea"],
+			"Treatment":["Taking bath in lukewarm water", "Having plenty of liquids", "Avoid alcohol and caffeinated drinks", "Taking enough rest","Keep yourself cool", "Seek the help of a doctor if the temperature is higher than 100.4 degree F in adults and if the temperature is higher than 99.5 degree F in kids"],
+			"Precautions":["Wash your hands frequently", "Maintain personal hygiene", "Use hand sanitizers", "When you sneeze or cough cover your mouth","Avoid sharing utensils and water bottles","Do not touch your nose", "mouth and eyes often", "Avoid contact with people who are ill"]
+			}],
+		 "context":[""]
+	    },
+        
+        
+        {
+		"tag":"cold",
+		"patterns":["cold","i have cold","i have come down with a cold","i am feeling cold","i am sick with cold","i have caught a cold","i am getting cold"],
+		"responses":[{
+			"Causes":["Change in weather", "Allergies", "Virus infection"],
+			"Symptoms":["Runny nose", "Cough", "Sore throat", "Sneezing", "Stuffy nose", "Headache", "Earache", "Tiredness", "Body pains", "Loss of smell"],
+			"Treatment":["Resting", "Warm baths", "Gargling with salt water", "Stay well-hydrated", "Taking soups"],
+			"Precautions":["Avoid touching your nose, eyes and mouth", "Wash your hands regularly", "Avoid smoking", "Keep your home clean", "Keep up a healthy lifestyle", "Avoid stress"]
+			}],
+		"context":[""]
+	    },
+	    {
+		"tag":"cough",
+		"patterns":["cough","i am suffering from cough","i am feeling cough","i am sick with cough","i have cough"],
+		"responses":[{
+			"Causes":["Respiratory infections", "Common cold", "Bronchitis", "Mucus", "Smoking", "Allergies"],
+			"Symptoms":["Dry mouth", "Sore throat", "Heart burn", "Bitter taste in the mouth"],
+			"Treatment":["Honey", "Ginger", "Gargling with salt water", "Stay hydrated completely", "Inhale steam", "Avoid dust and other pollutants"],
+			"Precautions":["Do not smoke", "Eat more fruits", "Stay away from sick people", "Avoid triggers"]
+			}],
+		"context":[""]
+	    },
+	    {
+		"tag":"asthma",
+		"patterns":["asthama","asthma","i have asthama", "i have asthma","i am suffering from asthma","i am diseased with asthma"],
+		"responses":[{
+			"Causes":["Stress", "Air pollution", "Dust", "Genetic factor", "Smoking", "Respiratory infections","Allergic reactions", "Cold air","Viral infections"],
+			"Symptoms":["Anxiety", "Panic", "Difficulty talking", "Shortness of breath", "Tiredness", "Chest tightness", "Chest congestion", "Wheezing", "Difficulty sleeping"],
+			"Treatment":["Try to be physically active", "Managing stress", "Yoga", "Exercises"],
+			"Precautions":["Avoid Asthma triggers", "Quit smoking", "Healthy lifestyle", "Avoid cold", "Take your medications regularly"]
+			}],
+		"context":[""]
+	    },
+	    {
+		"tag":"electric shock",
+		"patterns":["electric shock","i got electric shock","i am sufferred from electric shock"],
+		"responses":[{
+			"Causes":["Household appliances","Electrical outlets","Power lines","Electric machinery","Electric weapons"],
+			"Symptoms":["Lack of sensation","Breathing problems","Headache","Irregular heartbeat","Loss of consciousness","Seizures"],
+			"Treatment":["Do not touch the person","Turn off the source of electricity immediately","If the person’s breathing is low, start CPR instantly","If the person faints, make him lie down and keep his legs elevated"],
+			"Precautions":["Don’t let kids play with the electrical cords","Use outlet covers","Replace outlets near water Lightning","Stay away from trees and metal objects when lightning strikes"]
+			}],
+		"context":[""]
+	    },
+	    {
+		"tag":"COVID-19",
+		"patterns":["COVID-19","i got covid19","i got covid positive", "i am suffering from corona", "i had corona", "i have covid19","i am suffering from covid19"],
+		"responses":[{
+			"Causes":["The disease spreads majorly through contact with an infected person","The droplets from the nose and mouth of an affected person will cause the disease"],
+			"Symptoms":["Tiredness","Loss of smell and taste","Severe cough","Fever","Sore throat","Headache","Diarrhea, nausea, and vomiting"],
+			"Treatment":["Take rest","Sleep well","Keep yourself warm","Drink plenty of liquids","Use a room humidifier or take a hot shower to help relieve a sore throat and cough","Approach a doctor if you have severe fever, cough and difficulty breathing and share your travel history if any"],
+			"Precautions":["Cover mouth and nose while sneezing and coughing","Do not spit in public","Use hand sanitizers","Wash your hands regularly with soap","Dispose the used tissues properly","Stay at home","Stay hydrated","Avoid crowd","Do not touch your mouth, nose and eyes unnecessarily"]
+			}],
+		"context":[""]
+	    },
+	    {
+		"tag":"Snake bite",
+		"patterns":["snake bite","i got snake bite","i caught up with snake bit","i am suffering from snake bite"],
+		"responses":[{
+			"Causes":["Snake bite"],
+			"Symptoms":["Swelling","Redness around the bite mark","Difficulty breathing","Unclear vision","Lack of sensation","Sweating","Vomiting"],
+			"Treatment":["Stay calm and motionless","Cover the bite with a clean, dry bandage","Remove any jewelry or watches","Do not apply ice on the wound","Do not try to suck out the venom","Do not cut into the wound","Do not drink coffee or tea","Do not take any pain killers"],
+			"Precautions":["Do not reach into unknown spaces and holes","Do not lie down or sit down in areas where there might be snakes","If you come across a snake, slowly move away from that place and avoid touching it","Do not try to catch, touch or keep venomous snakes"]
+			}],
+		"context":[""] 
+	    },
+	    {
+		"tag":"Bike accident",
+		"patterns":["bike accident","i met with bike accident","i am suffering with bike accident"],
+		"responses":[{
+			"Causes":["Accidents"],
+			"Symptoms":["Nausea","VDo not cross the speed limitomiting","Unconsciousness","Seizure","Headaches","Loss of coordination"],
+			"Treatment":["Wash the affected area with antibacterial soap","Apply an antibacterial ointment to open wounds","Keep a fresh bandage on the wound","Check for infection"],
+			"Precautions":["Wear helmet","Do not cross the speed limit","Keep a safe distance from other vehicles","Maintain your two-wheelers properly"]
+			}],
+		"context":[""]
+	    },
+	    {
+		"tag":"Eye injury",
+		"patterns":["eye injury","my eye is injured", "i am suffering from eye injury","i got an eye injury","i have eye injury"],
+		"responses":[{
+			"Causes":["Swelling","Scratches","Chemical burns","Strange objects in the eye","Bleeding"],
+			"Symptoms":["Trouble seeing","Pain","Unusual size and shape of the eye","Cuts in the eyelid","Swelling","Problems with the eye movement","Redness","Bleeding"],
+			"Treatment":["Do not apply any pressure","Do not apply cold compress","Do not rub your eyes","Wash your eyes with water","Do not keep a bandage"],
+			"Precautions":["While using fire crackers, make sure of the safety of your eye","Wear glasses, goggles or face shields when you handle chemicals or involve sports activities","If you wear contact lenses, then follow your doctor’s instructions"]
+			}],
+		"context":[""]
+	    },
+	    {
+		"tag":"Burns or cuts",
+		"patterns":["burns","burning","burned", "my finger was burned" ,"cuts"],
+		"responses":[{
+			"Causes":["Hot liquids","Burns","Hot water","Fire","Electrical contact"],
+			"Symptoms":["Red skin","Blister","Pain","Scar","Peeling skin"],
+			"Treatment":["Cool the burn","Remove rings and other tight items","Bandage the burn","Apply a lotion or an ointment","Take a pain reliever","Do not touch the blister"],
+			"Precautions":["Keep match boxes and lighters away from the kids","Cover unused electrical outlets with safety caps","Be careful with candles","Use space heaters with care","Keep your fireplace clean"]
+			}],
+		"context":[""]
+	    },
+	    {
+		"tag":"Nose bleed",
+		"patterns":["nose bleed","my nose is bleeding", "i am suffering from nose bleed","i got nose bleed"],
+		"responses":[{
+			"Causes":["Bleeding disorders","Nasal polyps","Nasal tumors","High blood pressure","Alcohol","Sinusitis","Rhinitis"],
+			"Symptoms":["Nose bleeds often","Heavy bleeding","Irregular heart beat","Shortness of breath","Becoming pale"],
+			"Treatment":["Relax","Breathe through your mouth","Apply ice","Use a tissue or a wet cloth to clean the blood"],
+			"Precautions":["Use a nasal spray or drops twice or thrice a day","Keep a humidifier at home","Do not put your fingers into your nose","Do not smoke","Keep your nails short"]
+			}],
+		"context":[""]
+	    },
+	    {
+		"tag":"Heart disease",
+		"patterns":["heart disease","heart attack","i am suffering from heart disease","i have heart disease"],
+		"responses":[{
+			"Causes":["Coronary artery disease","Heart rhythm problems","Heart valve disease","Heart infection","Disease of the heart muscle"],
+			"Symptoms":["Slow heart beat","Fast heart beat","Chest pain","Shortness of breath","Fainting","Swelling in the legs"],
+			"Treatment":["A variety of medications can be used to treat heart problems, and a doctor can consult with the patient to determine one that is right for them"],
+			"Precautions":["Do not smoke","Control your blood pressure, cholesterol and diabetes","Exercise at least 30 minutes everyday","Eat a balanced diet","Maintain a healthy weight","Reduce stress","Maintain good hygiene"]
+			}],
+		"context":[""]
+	    },
+	    {
+		"tag":"Influenza",
+		"patterns":["influenza","i am suffering with influenza","i got influenza","i have influenza"],
+		"responses":[{
+			"Causes":["H1N1 virus","H5N1 virus","H7N9 virus"],
+			"Symptoms":["Head ache","Head ache","Sweats and chills","Fever","Dry cough","Nasal block","Weakness","Pain in muscles"],
+			"Treatment":["Take rest","Drink plenty of liquids","Anti viral drugs prescribed by a doctor"],
+			"Precautions":["Avoid contact with people with illness","Stay home when you are ill","Cover your mouth and nose","Clean your hands","Do not touch your nose, eyes and mouth","Do not touch your nose, eyes and mouth","Maintain good health habits"]
+			}],
+		"context":[""]
+	    },
+	    {
+		"tag":"Pneumonia",
+		"patterns":["pneumonia","i am suffering from pneumonia","i caught with pneumonia","i have pneumonia","i got pneumonia"],
+		"responses":[{
+			"Causes":["Bacteria","Virus","Fungi","Diabetes","Asthma","Poor nutrition","Cold","Influenza","Pollution","HIV infection"],
+			"Symptoms":["Fever","Weakness","Tiredness","Vomiting","Cough","Wheezing","Headache","diarrhea","shortness of breath"],
+			"Treatment":["Antibiotics","Anti viral medicines"],
+			"Precautions":["Maintain good hygiene","Take proper nutrition","Avoid smoking","Clean your hands often"]
+			}],
+		"context":[""]
+	    },
+	    {
+		"tag":"Unintentional injuries",
+		"patterns":["unintentional injuries", "i got an unexpected injury", "unintentionally i cut myself"],
+		"responses":[{
+			"Causes":["Acts of violenceVehicle accidents","Bite or sting","Poisoning","Chemical exposure","Sports injuries","Falls"],
+			"Symptoms":["Scrapes","Bleeding or heavy bleeding","Swelling","Burns","Bones abnormality","Pain","Cuts"],
+			"Treatment":["Apply antibiotic liquid or ointment","Pain medication","Cleansing","Dressing","Stitches","Surgery"],
+			"Precautions":["Wear seatbelt","Supervise your kids’ activities","Install safety devices at home","Keep electrical appliances unplugged when not in use","Read the labels on medicines and food products","Keep a list of emergency numbers at home","Maintain a well-stocked","first aid kit at home, work, and in the car"]
+			}],
+		"context":[""]
+	    },
+	    {
+		"tag":"Bronchitis",
+		"patterns":["bronchitis","i am suffering with bronchitis","i have bronchitis","i got bronchitis","i am sick with bronchitis"],
+		"responses":[{
+			"Causes":["Bacterial infection,Viral infection","Air pollution","Smoking","Inhaling harmful gases","Exposure to dust and smoke"],
+			"Symptoms":["Blocked nose","Head ache","Sore throat","Shortness of breath","Wheezing sound while breathing","Fever","Body pains"],
+			"Treatment":["Drink lot of water,Take enough rest","Take prescribed OTC medications","Take hot shower","Inhalers"],
+			"Precautions":["Avoid smoking","Wash your hands regularly","Wear a mask when you are exposed to pollution","Avoid exposure to dust, smoke, and other irritants","Exercise regularly","Try breathing exercises and yoga"]
+			}],
+		"context":[""]
+	    },
+	    {
+		"tag":"Emphysema",
+		"patterns":["emphysema","i am suffering with emphysema","i have emphysema","i caught with emphysema"],
+		"responses":[{
+			"Causes":["COPD","Smoking","Pollution","When lung tissues lose elasticity"],
+			"Symptoms":["Tightness in the chest","Shortness of breath","Chronic cough","Whistling sound while breathing"],
+			"Treatment":["Antibiotics","Surgery","Prescribed medications","Therapy"],
+			"Precautions":["Avoid smoking","Follow healthy diet","Drink plenty of water","Exercise regularly","Practice breathing exercises"]
+			}],
+		"context":[""]
+	    },
+	    {
+		"tag":"Chagas disease",
+		"patterns":["chagas disease","i am suffering from chagas disease","i have chagas disease","i got chagas disease"],
+		"responses":[{
+			"Causes":["T.Cruzi parasite","Triatomine bugs"],
+			"Symptoms":["Heart failure","Irregular heartbeat","Cardiac arrest","Difficulty swallowing","Stomach pain","Constipation","Fever","Headache","Body pains","Swollen eyelids"],
+			"Treatment":["Prescribed medicines by a doctor"],
+			"Precautions":["Removing insecticides","Cleaning the home often","Using bed nets","Following good hygiene"]
+			}],
+		"context":[""]
+	    },
+
+        
+        {"tag" : "about",
+         "patterns" : ["what is your name", "Who are you?" , "May i Know who is this?" ,"Tell about you", "Who is this?" , "Who am i talking to"  , "who's talking?" , "May i know to whom i am talking?" ] ,
+         "responses" : ["I am Macaron , your bot assistant", "I'm Macaron, an artificial intelligent bot", "My name is Macaron, your bot assistant" ,"My name is Macaron, your artificial intelligent bot"]
+        },
+        
+        {"tag": "help",
+         "patterns": ["Could you help me?", "I need a support", "I need a help", "support me please","Would you help me?","Help me out?"],
+         "responses": ["Tell me how can assist you", "Tell me your problem to assist you","Yeah! I am here to help you","I'd really like to help you out"]
+        },
+        
+        {"tag": "complaint",
+         "patterns": ["have a complaint", "I want to raise a complaint", "there is a complaint about a service","I'm not satisfied with your service","I'm extremely disappointed with your service"],
+         "responses": ["Please provide us your complaint in order to assist you", "Please mention your complaint, we will reach you and sorry for any inconvenience caused","Can you please let me know why you are not satisfied with our service","Can you please let me know the problem","Please accept our apologies for the error, let me know the problem and be patience while we solve it"]
+        },
+        
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can give you Disease predictions, symptoms, precautions and I can search nearby Hospitals and Pharmacies", "Offering support for Disease predictions, symptoms, precautions and can search nearby Hospitals and Pharmacies"],
+         "context": [""]
+        },
+        
+        {"tag": "pharmacy_search",
+         "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
+         "responses": ["Please provide pharmacy name"],
+         "context": ["search_pharmacy_by_name"]
+        },
+        {"tag": "search_pharmacy_by_name",
+         "patterns": [],
+         "responses": ["Loading pharmacy details"],
+         "context": [""]
+        },
+        {"tag": "hospital_search",
+         "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
+         "responses": ["Please provide hospital name or location"],
+         "context": ["search_hospital_by_params"]
+        },
+        {"tag": "search_hospital_by_params",
+         "patterns": [],
+         "responses": ["Please provide hospital type"],
+         "context": ["search_hospital_by_type"]
+        },
+        {"tag": "search_hospital_by_type",
+         "patterns": [],
+         "responses": ["Loading hospital details"],
+         "context": [""]
+        }
+   ]
+}
